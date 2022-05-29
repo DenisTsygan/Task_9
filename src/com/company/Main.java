@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         JSONGetter jsonGetter = new JSONGetter();
         String jsonString = jsonGetter.getJson("https://api.chess.com/pub/titled/GM");//Получаю строку json с никнеймами игроков у которых титул GM
-        String[] plaersName = parseJsonStringToArrayStr(jsonString);//парсю строку json  массив строк
+        String[] plaersName = parseJsonStringToArrayStr(jsonString);//парсю строку json в массив строк
         int numberPlayers=5;
         Players players=new Players();
         //В ArrayList players записываю player
